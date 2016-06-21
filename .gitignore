@@ -1,0 +1,13 @@
+# Java class files
+*.class
+
+# SBT generated files
+target/
+project/target/
+project/project/target
+
+# IntelliJ files
+*.iml
+
+# npm
+npm-debug.log
