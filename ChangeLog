@@ -1,0 +1,4 @@
+== 0.1 June 21 2016
+
+ * Initial commit with two examples of TreeLog logs in ReactTreeView format:
+   a success case, and an annotated case.
