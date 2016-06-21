@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>scalajs-react components demo</title>
+    <style>
+        html {
+        font-family:  sans-serif;
+        /* 1 */
+        -ms-text-size-adjust: 100%;
+        /* 2 */
+        -webkit-text-size-adjust: 100%;
+        /* 2 */
+        }
+        body {
+        margin: 0;
+        font-size: 13px;
+        line-height: 20px;
+        }
+        a {
+        color: red;
+        background: transparent;
+        text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container"></div>
+
+<script type="text/javascript">
+</script>
+<!--all js dependencies-->
+<!-- Include Scala.js compiled code -->
+
+<script type="text/javascript" src="target/scala-2.11/treelog-scalajs-jsdeps.js"></script>
+<script type="text/javascript" src="target/scala-2.11/treelog-scalajs-fastopt.js"></script>
+
+<!-- Run JSApp -->
+<script>com.oranda.treelogui.TreeLogUIExamples().main()</script>
+</body>
+</html>
