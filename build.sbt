@@ -1,3 +1,4 @@
+import sbt.Keys._
 import sbt._
 
 name := "treelog-scalajs"
@@ -15,17 +16,13 @@ resolvers ++= Seq(
   Resolver.sonatypeRepo("snapshots")
 )
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4"
-
 libraryDependencies ++= Seq(
   "com.github.japgolly.fork.scalaz" %%% "scalaz-core" % "7.2.0",
   "com.github.japgolly.scalajs-react" %% "core_sjs0.6" % "0.8.3",
   "com.github.japgolly.scalajs-react" %% "extra_sjs0.6" % "0.8.3",
-  "com.github.chandu0101.scalajs-react-components" %% "core_sjs0.6" % "0.4.1"
+  "com.github.chandu0101.scalajs-react-components" %% "core_sjs0.6" % "0.4.1",
+  "org.scalatest" %%% "scalatest" % "3.0.0-M15" % "test"
 )
-
-
-libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.9.0"
 
 scalaJSUseRhino in Global := false
 
@@ -48,5 +45,9 @@ jsDependencies ++= Seq(
     minified  "react-dom-server.min.js"
     dependsOn "react-dom.js"
     commonJSName "ReactDOMServer")
+
+
+// This causes tests to be run with the headless PhantomJS instead of Node
+jsDependencies += RuntimeDOM % "test"
 
 

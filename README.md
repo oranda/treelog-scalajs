@@ -2,7 +2,7 @@ TreeLog-ScalaJS
 ===============
 
 This project brings together two other projects: the excellent 
-[TreeLog] (https://github.com/lancewalton/treelog) from Lance and Channing Walton,
+[TreeLog](https://github.com/lancewalton/treelog) from Lance and Channing Walton,
 and the pretty ReactTreeView component from Øyvind Raddum Berg in the 
 [scalajs-react-components](https://github.com/chandu0101/scalajs-react-components) project.
 
@@ -39,7 +39,13 @@ Running
       
 ![](https://github.com/oranda/treelog-scalajs/raw/master/Screenshot-TreeLog_UI_v0.1.png)
       
+Running the tests
+=================
       
+1. Download [PhantomJS](http://phantomjs.org/download.html). This can run JavaScript outside a browser.
+2. Make sure the `phantomjs` executable is in your `PATH` environment variable.
+3. In this project's root, from the command-line run `sbt test`.
+  
 License
 =======
 
