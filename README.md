@@ -3,7 +3,7 @@ TreeLog-ScalaJS
 
 This project brings together two other projects: the excellent 
 [TreeLog](https://github.com/lancewalton/treelog) from Lance and Channing Walton,
-and the pretty ReactTreeView component from Øyvind Raddum Berg in the 
+and the pretty ReactTreeView component from Chandra Sekhar Kode in the 
 [scalajs-react-components](https://github.com/chandu0101/scalajs-react-components) project.
 
 **TreeLog** is a way of displaying a program's log in a tree structure instead of the hopelessly
